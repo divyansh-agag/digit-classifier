@@ -39,7 +39,7 @@ if evl:
                 roi=img[y:y+h,x:x+w]
                 roi=cv2.resize(roi,(20,20))
                 roi=cv2.copyMakeBorder(roi,4,4,4,4,cv2.BORDER_CONSTANT,value=0)
-                roi.reshape(1,28,28,1)
+                roi=roi.reshape(1,28,28,1)
                 roi=roi/255.0
                 digits.append(roi)
         for digit in digits:
