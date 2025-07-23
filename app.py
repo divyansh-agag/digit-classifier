@@ -5,7 +5,7 @@ import cv2
 import tensorflow as tf
 
 # Load your model
-model = tf.keras.models.load_model('digit-classifier/mnist.h5')
+model = tf.keras.models.load_model('mnist.h5')
 
 st.title("Digit Classifier (MNIST) with Streamlit")
 
